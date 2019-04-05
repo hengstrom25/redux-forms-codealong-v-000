@@ -14,3 +14,5 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
+
+export default connect(null, mapDispatchToProps)(CreateTodo);
