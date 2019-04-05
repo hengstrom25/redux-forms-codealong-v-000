@@ -14,6 +14,12 @@ class CreateTodo extends Component {
       text: event.target.value
     });
   }
+  
+  const mapDispatchToProps = dispatch => {
+    return {
+      addTodo: () => dispatch(<some action>)
+    }
+  }  
  
   render() {
     return(
