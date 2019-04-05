@@ -3,8 +3,11 @@ import { connect } from 'react-redux';
  
 class CreateTodo extends Component {
     state = {
-        text: ''
-    };
+      todos: [
+        { text: 'buy groceries' },
+        { text: 'watch netflix' },
+      ]
+    }
  
     handleChange = event => {
         this.setState({
