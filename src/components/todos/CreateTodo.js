@@ -14,6 +14,11 @@ class CreateTodo extends Component {
       text: event.target.value
     });
   }
+    
+    handleSubmit = event => {
+    event.preventDefault();
+    this.props.addTodo(this.state)
+  }
   
   const mapDispatchToProps = dispatch => {
       return {
